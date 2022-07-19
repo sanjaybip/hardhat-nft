@@ -1,0 +1,48 @@
+{
+  "name": "hardhat-nft-projects",
+  "version": "1.0.0",
+  "description": "Creating NFT projects",
+  "license": "MIT",
+  "devDependencies": {
+    "@ethersproject/abi": "^5.6.4",
+    "@ethersproject/providers": "^5.6.8",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.2",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.3",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+    "@nomiclabs/hardhat-etherscan": "^3.1.0",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.2",
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^18.0.4",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "ethers": "^5.6.9",
+    "hardhat": "^2.10.1",
+    "hardhat-deploy": "^0.11.11",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^2.7.1",
+    "prettier-plugin-solidity": "^1.0.0-dev.22",
+    "solhint": "^3.3.7",
+    "solidity-coverage": "^0.7.21",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.0",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "test": "yarn hardhat test",
+    "lint": "solhint 'contracts/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix",
+    "format": "prettier --write .",
+    "typechain": "yarn hardhat typechain"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.1",
+    "@openzeppelin/contracts": "^4.7.0",
+    "@pinata/sdk": "^1.1.26",
+    "base64-sol": "^1.1.0",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
